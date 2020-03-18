@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ud809_News Feed</string>
+    <string name="activity_name">Feed</string>
+    <string name="no_results">No news feed.</string>
+    <string name="world_news">News</string>
+    <string name="comment_is_free">Opinion</string>
+    <string name="sport">Sport</string>
+    <string name="culture">Culture</string>
+    <string name="life_and_style">Lifestyle</string>
+</resources>
