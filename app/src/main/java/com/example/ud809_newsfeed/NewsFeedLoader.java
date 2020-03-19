@@ -1,11 +1,7 @@
 package com.example.ud809_newsfeed;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.telephony.RadioAccessSpecifier;
 import android.util.Log;
-import android.view.View;
-import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
