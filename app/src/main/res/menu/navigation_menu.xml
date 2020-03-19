@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/international"
+            android:icon="@drawable/ic_global_indigo_36dp"
+            android:title="@string/world_news"
+            android:checked="true" />
+        <item
+            android:id="@+id/opinion"
+            android:icon="@drawable/ic_opinion_indigo_36dp"
+            android:title="@string/comment_is_free" />
+        <item
+            android:id="@+id/sport"
+            android:icon="@drawable/ic_sports_indigo_36dp"
+            android:title="@string/sport" />
+        <item
+            android:id="@+id/culture"
+            android:icon="@drawable/ic_culture_indigo_36dp"
+            android:title="@string/culture" />
+        <item
+            android:id="@+id/life_style"
+            android:icon="@drawable/ic_life_style_indigo_36dp"
+            android:title="@string/life_and_style" />
+    </group>
+
+</menu>

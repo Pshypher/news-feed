@@ -2,7 +2,10 @@ package com.example.ud809_newsfeed;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.telephony.RadioAccessSpecifier;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,9 +22,9 @@ public class NewsFeedLoader extends AsyncTaskLoader<List<Feed>> {
 
     private static final String LOG_TAG = NewsFeedLoader.class.getSimpleName();
 
-    public NewsFeedLoader(@NonNull Context context, Bundle args) {
+    public NewsFeedLoader(@NonNull Context context, String urlString) {
         super(context);
-        urlString = args.getString(NewsFeedFragment.REQUEST_URL_STRING);
+        this.urlString = urlString;
         resultFromHttp = null;
     }
 
