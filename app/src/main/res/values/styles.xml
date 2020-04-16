@@ -7,12 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="actionBarStyle">@style/Theme.CustomApp.ActionBar</item>
+        <item name="actionBarStyle">@style/Theme.NewsFeedTheme.ActionBar</item>
         <item name="colorControlNormal">@android:color/white</item>
         <item name="android:colorControlNormal">@android:color/white</item>
     </style>
 
-    <style name="Theme.CustomApp.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="Theme.NewsFeedTheme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <!-- remove shadow below action bar -->
         <item name="android:elevation">0dp</item>
         <!-- Support library compatibility -->

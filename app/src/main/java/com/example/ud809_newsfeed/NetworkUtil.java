@@ -122,6 +122,7 @@ public class NetworkUtil {
             JSONArray results = responseJSON.getJSONArray("results");
             for (int i = 0; i < results.length(); i++) {
                 JSONObject resultFeed = results.getJSONObject(i);
+                String section = resultFeed.getString("sectionName");
                 String title = resultFeed.getString("webTitle");
                 String url = resultFeed.getString("webUrl");
                 String date = resultFeed.getString("webPublicationDate");
@@ -135,7 +136,7 @@ public class NetworkUtil {
                 }
 
                 Bitmap image = downloadImage(createURL(thumbnailURL));
-                feeds.add(new Feed(image, title, contributor, date, url));
+                feeds.add(new Feed(image, section, title, contributor, date, url));
             }
 
             return feeds;

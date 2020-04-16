@@ -42,6 +42,7 @@ public class NewsFeedAdapter extends ArrayAdapter<Feed> {
     private static class ViewHolder {
 
         private ImageView thumbnail;
+        private TextView section;
         private TextView headline;
         private TextView contributor;
         private TextView date;
@@ -49,6 +50,7 @@ public class NewsFeedAdapter extends ArrayAdapter<Feed> {
 
         public ViewHolder(View view) {
             thumbnail = (ImageView) view.findViewById(R.id.news_feed_image);
+            section = (TextView) view.findViewById(R.id.news_feed_section);
             headline = (TextView) view.findViewById(R.id.headline);
             contributor = (TextView) view.findViewById(R.id.author);
             date = (TextView) view.findViewById(R.id.date);
@@ -57,6 +59,7 @@ public class NewsFeedAdapter extends ArrayAdapter<Feed> {
 
         public void bind(Feed feed) {
             thumbnail.setImageBitmap(feed.getThumbnail());
+            section.setText("#" + feed.getSection());
             headline.setText(feed.getWebTitle());
             contributor.setText(feed.getContributor());
             date.setText(getDate(feed.getPublicationDate()));

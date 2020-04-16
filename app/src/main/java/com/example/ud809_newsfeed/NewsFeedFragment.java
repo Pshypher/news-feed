@@ -85,7 +85,7 @@ public class NewsFeedFragment extends Fragment {
 
     public void clear() { adapter.clear(); }
 
-    public void setEmptyTextOutput(String text) {
+    public void setEmptyViewText(String text) {
         TextView emptyStateTextView = (TextView) newsfeedlayout.findViewById(R.id.empty_field);
         emptyStateTextView.setText(text);
     }

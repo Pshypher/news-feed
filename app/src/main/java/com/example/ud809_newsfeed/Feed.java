@@ -5,14 +5,16 @@ import android.graphics.Bitmap;
 public class Feed {
 
     private Bitmap mThumbnail;
+    private String mSection;
     private String mWebTitle;
     private String mContributor;
     private String mPublicationDate;
     private String mWebURL;
 
-    public Feed(Bitmap thumbnail, String webTitle, String contributor,
+    public Feed(Bitmap thumbnail, String section, String webTitle, String contributor,
                 String publicationDate, String url) {
         mThumbnail = thumbnail;
+        mSection = section;
         mWebTitle = webTitle;
         mContributor = contributor;
         mPublicationDate = publicationDate;
@@ -21,6 +23,10 @@ public class Feed {
 
     public Bitmap getThumbnail() {
         return mThumbnail;
+    }
+
+    public String getSection() {
+        return mSection;
     }
 
     public String getWebTitle() {
